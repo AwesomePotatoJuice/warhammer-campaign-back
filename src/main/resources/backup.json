@@ -1,0 +1,30 @@
+{"sampleChaosSM":
+{
+  "stats": {"limit": 300, "maxLimit": 600, "FCP": 4},
+  "armyList":
+  {
+    "HQ": [{"label": "Sample label HQ CHAOS", "points": 110, "modelsCount": 1},{"label": "Sample label HQ 2", "points": 20, "modelsCount": 2}],
+    "troops":[{"label": "Sample label troops", "points": 50, "modelsCount": 10}, {"label": "Sample label troops 2", "points": 60, "modelsCount": 5}],
+    "elites":[{"label": "213", "points": "", "modelsCount": ""}],
+    "heavySupport":[{"label": "", "points": "", "modelsCount": ""}],
+    "fastAttack":[{"label": "", "points": "", "modelsCount": ""}],
+    "dedicatedTransport":[{"label": "", "points": "", "modelsCount": ""}]
+  }
+},
+  "sampleBlood": {"stats": {"limit": 333,
+    "maxLimit": 600, "FCP": 4},
+    "armyList":{"HQ": [{"label": "Sample label HQ BLOOD", "points": 110, "modelsCount": 1},{"label": "Sample label HQ 2", "points": 520, "modelsCount": 2}],
+      "troops":[{"label": "Sample label troops", "points": 50, "modelsCount": 10}, {"label": "Sample label troops 2", "points": 60, "modelsCount": 5}],
+      "elites":[{"label": "", "points": "", "modelsCount": ""}],
+      "heavySupport":[{"label": "", "points": "", "modelsCount": ""}],
+      "fastAttack":[{"label": "", "points": "", "modelsCount": ""}],
+      "dedicatedTransport":[{"label": "", "points": "", "modelsCount": ""}]}},
+  "sampleAdMech": {"stats": {"limit": 555,
+    "maxLimit": 600, "FCP": 4},
+    "armyList":{"HQ": [{"label": "Sample label HQ ADMECH", "points": 110, "modelsCount": 1},{"label": "Sample label HQ 2", "points": 1020, "modelsCount": 2}],
+      "troops":[{"label": "Sample label troops", "points": 50, "modelsCount": 10}, {"label": "Sample label troops 2", "points": 60, "modelsCount": 5}],
+      "elites":[{"label": "", "points": "", "modelsCount": ""}],
+      "heavySupport":[{"label": "", "points": "", "modelsCount": ""}],
+      "fastAttack":[{"label": "", "points": "", "modelsCount": ""}],
+      "dedicatedTransport":[{"label": "", "points": "", "modelsCount": ""}]}}
+}
