@@ -9,6 +9,7 @@ import java.io.*;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import javax.swing.filechooser.FileSystemView;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -19,14 +20,18 @@ public class PlayerDataService {
 
     private static String filePath = "/root/campaign-back/data/data.json";
     private static final String filePathLinux = "/root/campaign-back/data/data.json";
-    private static final String localFilePath = "C:/Users/Surin/Desktop/TestCampaign/data.json";
+//    private static final String localFilePath = "C:/Users/Surin/Desktop/TestCampaign/data.json"; //Deprecated
 
     public PlayerDataService() {
         if(SystemUtils.IS_OS_LINUX){
             filePath = filePathLinux;
         }
         if(SystemUtils.IS_OS_WINDOWS){
-            filePath = localFilePath;
+
+
+            FileSystemView filesys = FileSystemView.getFileSystemView();
+
+            filePath = filesys.getHomeDirectory().getAbsolutePath() + "\\TestCampaign\\data.json";
         }
     }
 
