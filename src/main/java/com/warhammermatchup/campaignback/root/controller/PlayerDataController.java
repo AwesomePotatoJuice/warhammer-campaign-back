@@ -3,6 +3,7 @@ package com.warhammermatchup.campaignback.root.controller;
 import com.warhammermatchup.campaignback.root.service.PlayerDataService;
 import entity.PlayerDataEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,8 +31,8 @@ public class PlayerDataController {
     }
 
     @PostMapping(value = "/setData")
-    public ResponseEntity<PlayerDataEntity> setPlayerData(@RequestParam String player, @RequestBody PlayerDataEntity playerDataEntityList){
+    public ResponseEntity<PlayerDataEntity> setPlayerData(@RequestParam(required = false) String player, @RequestBody PlayerDataEntity playerDataEntityList){
         PlayerDataEntity result = playerDataService.setPlayerData(player, playerDataEntityList);
-        return ResponseEntity.ok(result);
+        return new ResponseEntity<>(result, HttpStatus.CREATED);
     }
 }
